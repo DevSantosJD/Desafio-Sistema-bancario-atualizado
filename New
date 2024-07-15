@@ -3,7 +3,7 @@ import textwrap
 
 def menu():
     menu = """\n
-    ================ MENU ================
+    ================ MENU DE OPÇÕES ================
     [d]\tDepositar
     [s]\tSacar
     [e]\tExtrato
@@ -22,7 +22,6 @@ def depositar(saldo, valor, extrato, /):
         print("\n=== Depósito realizado com sucesso! ===")
     else:
         print("\n@@@ Operação falhou! O valor informado é inválido. @@@")
-
     return saldo, extrato
 
 
@@ -101,7 +100,6 @@ def listar_contas(contas):
         """
         print("=" * 100)
         print(textwrap.dedent(linha))
-
 
 def main():
     LIMITE_SAQUES = 3
